@@ -1,0 +1,140 @@
+{
+  "app": {
+    "name": "AEGIS VAULT",
+    "tagline": "Secure Contract Management"
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "retry": "Retry",
+    "done": "Done",
+    "close": "Close",
+    "or": "or",
+    "email": "Email",
+    "phone": "Phone Number",
+    "password": "Password"
+  },
+  "welcome": {
+    "title": "AEGIS VAULT",
+    "subtitle": "Secure Contract Management",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "auth": {
+    "signUp": {
+      "title": "Create Account",
+      "subtitle": "Enter your details to get started",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "passwordPlaceholder": "Enter your password",
+      "next": "Next"
+    },
+    "verifyIdentity": {
+      "title": "Identity Verification",
+      "subtitle": "Please provide your identity documents",
+      "nationalId": "National ID",
+      "nationalIdDesc": "Take a photo of your National ID",
+      "passport": "Passport",
+      "passportDesc": "Take a photo of your Passport",
+      "capturePhoto": "Capture Photo",
+      "captured": "Captured",
+      "next": "Next"
+    },
+    "verifyFace": {
+      "title": "Face Verification",
+      "subtitle": "Please point the camera at your face clearly in a well-lit area",
+      "capturePhoto": "Capture",
+      "verified": "Face verified successfully",
+      "failed": "Face verification failed. Please try again.",
+      "alreadyRegistered": "Already registered",
+      "completeRegistration": "Complete Registration"
+    },
+    "success": {
+      "title": "Registration Successful!",
+      "subtitle": "Setting up your secure account...",
+      "enterApp": "Enter the App"
+    },
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Welcome back to AEGIS VAULT",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password",
+      "signInButton": "Sign In",
+      "biometric": "Sign in with Fingerprint",
+      "signature": "Sign with your finger",
+      "signatureDesc": "Draw your signature below",
+      "clearSignature": "Clear",
+      "forgotPassword": "Forgot password?"
+    }
+  },
+  "home": {
+    "title": "My Contracts",
+    "search": "Search contracts...",
+    "empty": "No contracts yet",
+    "emptyDesc": "Your contracts will appear here"
+  },
+  "contract": {
+    "details": "Contract Details",
+    "type": "Type",
+    "company": "Company",
+    "status": "Status",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "value": "Value",
+    "involvedParties": "Involved Parties",
+    "drafts": "Drafts",
+    "timeline": "Timeline",
+    "proposals": "Proposals",
+    "viewChat": "View Proposals",
+    "statusLabels": {
+      "draft": "Draft",
+      "active": "Active",
+      "pending": "Pending",
+      "signed": "Signed",
+      "expired": "Expired"
+    },
+    "draftStatus": {
+      "completed": "Completed",
+      "current": "Current",
+      "pending": "Pending"
+    }
+  },
+  "chat": {
+    "title": "Proposals",
+    "empty": "No proposals yet",
+    "emptyDesc": "Proposals and discussions will appear here",
+    "compose": "Write a proposal...",
+    "send": "Send",
+    "status": {
+      "accepted": "Accepted",
+      "rejected": "Rejected",
+      "pending": "Pending",
+      "counter": "Counter Proposal"
+    },
+    "step": "Step"
+  },
+  "tabs": {
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "arabic": "العربية",
+    "english": "English",
+    "profile": "Profile",
+    "logout": "Logout",
+    "logoutConfirm": "Are you sure you want to logout?",
+    "about": "About",
+    "version": "Version"
+  }
+}

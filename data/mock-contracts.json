@@ -1,0 +1,365 @@
+[
+  {
+    "id": "contract-001",
+    "title": "Facebook Partnership Agreement",
+    "titleAr": "اتفاقية شراكة فيسبوك",
+    "companyName": "Meta (Facebook)",
+    "companyLogo": "facebook",
+    "type": "Partnership",
+    "status": "active",
+    "startDate": "2026-01-15",
+    "endDate": "2027-01-15",
+    "description": "Strategic partnership agreement between AEGIS VAULT and Meta for secure document management integration across Facebook Business Suite.",
+    "descriptionAr": "اتفاقية شراكة استراتيجية بين إيجس فولت وميتا لدمج إدارة المستندات الآمنة عبر فيسبوك بيزنس سويت.",
+    "value": "2,500,000",
+    "currency": "USD",
+    "involvedParties": [
+      {
+        "id": "party-001",
+        "name": "Ahmed Al-Rashidi",
+        "role": "CEO",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      },
+      {
+        "id": "party-002",
+        "name": "Sarah Johnson",
+        "role": "VP of Partnerships",
+        "company": "Meta",
+        "avatar": ""
+      },
+      {
+        "id": "party-003",
+        "name": "Omar Hassan",
+        "role": "Legal Counsel",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      },
+      {
+        "id": "party-004",
+        "name": "Michael Chen",
+        "role": "Legal Director",
+        "company": "Meta",
+        "avatar": ""
+      }
+    ],
+    "drafts": [
+      {
+        "id": "draft-001-1",
+        "contractId": "contract-001",
+        "stepNumber": 1,
+        "title": "Initial Proposal",
+        "titleAr": "المقترح الأولي",
+        "description": "First draft of partnership terms submitted by AEGIS VAULT",
+        "descriptionAr": "المسودة الأولى لشروط الشراكة المقدمة من إيجس فولت",
+        "date": "2025-11-01",
+        "status": "completed",
+        "content": "Initial terms for integration of AEGIS VAULT secure signing into Facebook Business Suite...",
+        "contentAr": "الشروط الأولية لدمج التوقيع الآمن من إيجس فولت في فيسبوك بيزنس سويت...",
+        "author": "Ahmed Al-Rashidi"
+      },
+      {
+        "id": "draft-001-2",
+        "contractId": "contract-001",
+        "stepNumber": 2,
+        "title": "Meta Counter-Proposal",
+        "titleAr": "المقترح المضاد من ميتا",
+        "description": "Meta's response with modified terms and additional clauses",
+        "descriptionAr": "رد ميتا مع شروط معدلة وبنود إضافية",
+        "date": "2025-11-15",
+        "status": "completed",
+        "content": "Modified partnership terms with additional data privacy requirements and revenue sharing model...",
+        "contentAr": "شروط شراكة معدلة مع متطلبات إضافية لخصوصية البيانات ونموذج تقاسم الإيرادات...",
+        "author": "Sarah Johnson"
+      },
+      {
+        "id": "draft-001-3",
+        "contractId": "contract-001",
+        "stepNumber": 3,
+        "title": "Legal Review",
+        "titleAr": "المراجعة القانونية",
+        "description": "Joint legal review and compliance assessment",
+        "descriptionAr": "مراجعة قانونية مشتركة وتقييم الامتثال",
+        "date": "2025-12-01",
+        "status": "completed",
+        "content": "Legal review completed. All terms comply with international standards...",
+        "contentAr": "اكتملت المراجعة القانونية. جميع الشروط تتوافق مع المعايير الدولية...",
+        "author": "Omar Hassan"
+      },
+      {
+        "id": "draft-001-4",
+        "contractId": "contract-001",
+        "stepNumber": 4,
+        "title": "Final Agreement",
+        "titleAr": "الاتفاقية النهائية",
+        "description": "Final version signed by both parties",
+        "descriptionAr": "النسخة النهائية موقعة من كلا الطرفين",
+        "date": "2026-01-10",
+        "status": "completed",
+        "content": "Final agreement with all approved terms, revenue sharing at 70/30, duration 12 months...",
+        "contentAr": "الاتفاقية النهائية مع جميع الشروط المعتمدة، تقاسم الإيرادات 70/30، المدة 12 شهرًا...",
+        "author": "Ahmed Al-Rashidi"
+      },
+      {
+        "id": "draft-001-5",
+        "contractId": "contract-001",
+        "stepNumber": 5,
+        "title": "Signed Contract",
+        "titleAr": "العقد الموقّع",
+        "description": "Digitally signed by all parties",
+        "descriptionAr": "موقّع رقمياً من جميع الأطراف",
+        "date": "2026-01-15",
+        "status": "current",
+        "content": "Contract signed and executed. Implementation begins Q1 2026.",
+        "contentAr": "تم توقيع العقد وتنفيذه. يبدأ التنفيذ في الربع الأول من 2026.",
+        "author": "All Parties"
+      }
+    ]
+  },
+  {
+    "id": "contract-002",
+    "title": "Google Cloud SLA",
+    "titleAr": "اتفاقية مستوى خدمة جوجل كلاود",
+    "companyName": "Google Cloud",
+    "companyLogo": "google",
+    "type": "SLA",
+    "status": "pending",
+    "startDate": "2026-03-01",
+    "endDate": "2028-03-01",
+    "description": "Service Level Agreement for Google Cloud infrastructure hosting and data storage services.",
+    "descriptionAr": "اتفاقية مستوى الخدمة للاستضافة على بنية جوجل كلاود التحتية وخدمات تخزين البيانات.",
+    "value": "1,200,000",
+    "currency": "USD",
+    "involvedParties": [
+      {
+        "id": "party-005",
+        "name": "Ahmed Al-Rashidi",
+        "role": "CEO",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      },
+      {
+        "id": "party-006",
+        "name": "Lisa Wang",
+        "role": "Enterprise Sales Director",
+        "company": "Google Cloud",
+        "avatar": ""
+      }
+    ],
+    "drafts": [
+      {
+        "id": "draft-002-1",
+        "contractId": "contract-002",
+        "stepNumber": 1,
+        "title": "Service Requirements",
+        "titleAr": "متطلبات الخدمة",
+        "description": "Outlined infrastructure needs and uptime requirements",
+        "descriptionAr": "تحديد احتياجات البنية التحتية ومتطلبات وقت التشغيل",
+        "date": "2026-01-20",
+        "status": "completed",
+        "content": "Infrastructure requirements: 99.99% uptime, multi-region deployment, HIPAA compliance...",
+        "contentAr": "متطلبات البنية التحتية: وقت تشغيل 99.99%، نشر متعدد المناطق، الامتثال لـ HIPAA...",
+        "author": "Ahmed Al-Rashidi"
+      },
+      {
+        "id": "draft-002-2",
+        "contractId": "contract-002",
+        "stepNumber": 2,
+        "title": "Google Cloud Proposal",
+        "titleAr": "مقترح جوجل كلاود",
+        "description": "Google's service proposal with pricing tiers",
+        "descriptionAr": "مقترح خدمة جوجل مع مستويات الأسعار",
+        "date": "2026-02-05",
+        "status": "current",
+        "content": "Premium tier with Enterprise Support, dedicated account manager, custom SLA terms...",
+        "contentAr": "المستوى المتميز مع دعم المؤسسات، مدير حساب مخصص، شروط SLA مخصصة...",
+        "author": "Lisa Wang"
+      },
+      {
+        "id": "draft-002-3",
+        "contractId": "contract-002",
+        "stepNumber": 3,
+        "title": "Negotiation",
+        "titleAr": "التفاوض",
+        "description": "Price negotiation and term adjustments",
+        "descriptionAr": "التفاوض على الأسعار وتعديل الشروط",
+        "date": "",
+        "status": "pending",
+        "content": "",
+        "contentAr": "",
+        "author": ""
+      },
+      {
+        "id": "draft-002-4",
+        "contractId": "contract-002",
+        "stepNumber": 4,
+        "title": "Final Signing",
+        "titleAr": "التوقيع النهائي",
+        "description": "Final agreement execution",
+        "descriptionAr": "تنفيذ الاتفاقية النهائية",
+        "date": "",
+        "status": "pending",
+        "content": "",
+        "contentAr": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": "contract-003",
+    "title": "Ministry of Interior Security Audit",
+    "titleAr": "عقد التدقيق الأمني لوزارة الداخلية",
+    "companyName": "Ministry of Interior",
+    "companyLogo": "government",
+    "type": "Service",
+    "status": "draft",
+    "startDate": "2026-04-01",
+    "endDate": "2026-10-01",
+    "description": "Security audit and compliance certification contract for government document management systems.",
+    "descriptionAr": "عقد التدقيق الأمني وشهادة الامتثال لأنظمة إدارة المستندات الحكومية.",
+    "value": "800,000",
+    "currency": "USD",
+    "involvedParties": [
+      {
+        "id": "party-007",
+        "name": "Ahmed Al-Rashidi",
+        "role": "CEO",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      },
+      {
+        "id": "party-008",
+        "name": "Maj. Khalid Al-Otaibi",
+        "role": "IT Director",
+        "company": "Ministry of Interior",
+        "avatar": ""
+      },
+      {
+        "id": "party-009",
+        "name": "Fatima Al-Zahra",
+        "role": "Security Compliance Officer",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      }
+    ],
+    "drafts": [
+      {
+        "id": "draft-003-1",
+        "contractId": "contract-003",
+        "stepNumber": 1,
+        "title": "RFP Response",
+        "titleAr": "الرد على طلب تقديم العروض",
+        "description": "Initial response to the government request for proposal",
+        "descriptionAr": "الرد الأولي على طلب تقديم العروض الحكومي",
+        "date": "2026-02-10",
+        "status": "current",
+        "content": "Comprehensive security audit proposal covering network, application, and data security layers...",
+        "contentAr": "مقترح تدقيق أمني شامل يغطي طبقات أمان الشبكة والتطبيقات والبيانات...",
+        "author": "Fatima Al-Zahra"
+      },
+      {
+        "id": "draft-003-2",
+        "contractId": "contract-003",
+        "stepNumber": 2,
+        "title": "Technical Review",
+        "titleAr": "المراجعة التقنية",
+        "description": "Technical review by ministry IT department",
+        "descriptionAr": "مراجعة تقنية من قسم تقنية المعلومات بالوزارة",
+        "date": "",
+        "status": "pending",
+        "content": "",
+        "contentAr": "",
+        "author": ""
+      },
+      {
+        "id": "draft-003-3",
+        "contractId": "contract-003",
+        "stepNumber": 3,
+        "title": "Contract Finalization",
+        "titleAr": "إنهاء العقد",
+        "description": "Final contract terms and signing ceremony",
+        "descriptionAr": "شروط العقد النهائية وحفل التوقيع",
+        "date": "",
+        "status": "pending",
+        "content": "",
+        "contentAr": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "id": "contract-004",
+    "title": "NDA with Samsung Electronics",
+    "titleAr": "اتفاقية عدم إفشاء مع سامسونج إلكترونيكس",
+    "companyName": "Samsung Electronics",
+    "companyLogo": "samsung",
+    "type": "NDA",
+    "status": "signed",
+    "startDate": "2025-06-01",
+    "endDate": "2027-06-01",
+    "description": "Non-Disclosure Agreement covering proprietary technology and business strategies shared during partnership exploration.",
+    "descriptionAr": "اتفاقية عدم إفشاء تغطي التقنيات المملوكة واستراتيجيات الأعمال المتبادلة خلال استكشاف الشراكة.",
+    "value": "N/A",
+    "currency": "",
+    "involvedParties": [
+      {
+        "id": "party-010",
+        "name": "Ahmed Al-Rashidi",
+        "role": "CEO",
+        "company": "AEGIS VAULT",
+        "avatar": ""
+      },
+      {
+        "id": "party-011",
+        "name": "Ji-Yeon Park",
+        "role": "Innovation Director",
+        "company": "Samsung Electronics",
+        "avatar": ""
+      }
+    ],
+    "drafts": [
+      {
+        "id": "draft-004-1",
+        "contractId": "contract-004",
+        "stepNumber": 1,
+        "title": "NDA Draft",
+        "titleAr": "مسودة اتفاقية عدم الإفشاء",
+        "description": "Standard NDA template with custom clauses",
+        "descriptionAr": "نموذج اتفاقية عدم إفشاء قياسي مع بنود مخصصة",
+        "date": "2025-05-10",
+        "status": "completed",
+        "content": "Standard mutual NDA with 2-year term, covering all shared IP and business information...",
+        "contentAr": "اتفاقية عدم إفشاء متبادلة قياسية لمدة سنتين، تغطي جميع الملكية الفكرية والمعلومات التجارية المتبادلة...",
+        "author": "Omar Hassan"
+      },
+      {
+        "id": "draft-004-2",
+        "contractId": "contract-004",
+        "stepNumber": 2,
+        "title": "Samsung Review",
+        "titleAr": "مراجعة سامسونج",
+        "description": "Samsung legal team review and minor amendments",
+        "descriptionAr": "مراجعة الفريق القانوني لسامسونج وتعديلات طفيفة",
+        "date": "2025-05-20",
+        "status": "completed",
+        "content": "Accepted with minor amendments to clause 4.2 regarding data retention periods...",
+        "contentAr": "تم القبول مع تعديلات طفيفة على البند 4.2 المتعلق بفترات الاحتفاظ بالبيانات...",
+        "author": "Ji-Yeon Park"
+      },
+      {
+        "id": "draft-004-3",
+        "contractId": "contract-004",
+        "stepNumber": 3,
+        "title": "Signed NDA",
+        "titleAr": "الاتفاقية الموقّعة",
+        "description": "Executed NDA with digital signatures",
+        "descriptionAr": "اتفاقية عدم إفشاء موقّعة رقمياً",
+        "date": "2025-06-01",
+        "status": "completed",
+        "content": "NDA executed and in effect. Valid until June 2027.",
+        "contentAr": "تم تنفيذ اتفاقية عدم الإفشاء. سارية حتى يونيو 2027.",
+        "author": "All Parties"
+      }
+    ]
+  }
+]

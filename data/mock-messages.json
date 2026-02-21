@@ -1,0 +1,181 @@
+{
+  "contract-001": [
+    {
+      "id": "msg-001-1",
+      "contractId": "contract-001",
+      "stepNumber": 1,
+      "title": "Partnership Terms Proposal",
+      "titleAr": "مقترح شروط الشراكة",
+      "sender": {
+        "id": "party-001",
+        "name": "Ahmed Al-Rashidi",
+        "avatar": "",
+        "company": "AEGIS VAULT"
+      },
+      "date": "2025-11-01",
+      "body": "We propose a strategic partnership to integrate AEGIS VAULT's secure signing platform into Facebook Business Suite. The integration would cover document verification, digital signatures, and contract management. We suggest a 70/30 revenue split in favor of AEGIS VAULT for the first year.",
+      "bodyAr": "نقترح شراكة استراتيجية لدمج منصة التوقيع الآمن من إيجس فولت في فيسبوك بيزنس سويت. سيغطي التكامل التحقق من المستندات والتوقيعات الرقمية وإدارة العقود. نقترح تقاسم الإيرادات 70/30 لصالح إيجس فولت في السنة الأولى.",
+      "status": "accepted",
+      "relatedDraftId": "draft-001-1",
+      "attachments": []
+    },
+    {
+      "id": "msg-001-2",
+      "contractId": "contract-001",
+      "stepNumber": 2,
+      "title": "Counter Proposal - Revenue Model",
+      "titleAr": "مقترح مضاد - نموذج الإيرادات",
+      "sender": {
+        "id": "party-002",
+        "name": "Sarah Johnson",
+        "avatar": "",
+        "company": "Meta"
+      },
+      "date": "2025-11-15",
+      "body": "Thank you for the proposal. We agree with the integration scope but suggest a 60/40 split for the first year, moving to 50/50 in year two. We also require additional data privacy provisions as per EU GDPR and California CCPA requirements. Attached is our modified terms document.",
+      "bodyAr": "شكرًا على المقترح. نتفق مع نطاق التكامل لكن نقترح تقسيم 60/40 للسنة الأولى، والانتقال إلى 50/50 في السنة الثانية. نطلب أيضًا أحكام إضافية لخصوصية البيانات وفقًا لمتطلبات GDPR الأوروبي و CCPA الكاليفورني. مرفق وثيقة الشروط المعدلة.",
+      "status": "counter",
+      "relatedDraftId": "draft-001-2",
+      "attachments": []
+    },
+    {
+      "id": "msg-001-3",
+      "contractId": "contract-001",
+      "stepNumber": 3,
+      "title": "Legal Review Complete",
+      "titleAr": "اكتمال المراجعة القانونية",
+      "sender": {
+        "id": "party-003",
+        "name": "Omar Hassan",
+        "avatar": "",
+        "company": "AEGIS VAULT"
+      },
+      "date": "2025-12-01",
+      "body": "Our legal team has reviewed the modified terms. We accept the 60/40 split for year one and 50/50 for year two. All privacy provisions meet international standards. We recommend proceeding to final agreement.",
+      "bodyAr": "قام فريقنا القانوني بمراجعة الشروط المعدلة. نقبل تقسيم 60/40 للسنة الأولى و 50/50 للسنة الثانية. جميع أحكام الخصوصية تتوافق مع المعايير الدولية. نوصي بالمضي قدمًا نحو الاتفاقية النهائية.",
+      "status": "accepted",
+      "relatedDraftId": "draft-001-3",
+      "attachments": []
+    },
+    {
+      "id": "msg-001-4",
+      "contractId": "contract-001",
+      "stepNumber": 4,
+      "title": "Final Agreement Ready",
+      "titleAr": "الاتفاقية النهائية جاهزة",
+      "sender": {
+        "id": "party-004",
+        "name": "Michael Chen",
+        "avatar": "",
+        "company": "Meta"
+      },
+      "date": "2026-01-05",
+      "body": "Meta legal has approved the final agreement. All parties are requested to review the final document and provide digital signatures by January 15, 2026.",
+      "bodyAr": "وافق قسم الشؤون القانونية في ميتا على الاتفاقية النهائية. يُطلب من جميع الأطراف مراجعة الوثيقة النهائية وتقديم التوقيعات الرقمية بحلول 15 يناير 2026.",
+      "status": "accepted",
+      "relatedDraftId": "draft-001-4",
+      "attachments": []
+    }
+  ],
+  "contract-002": [
+    {
+      "id": "msg-002-1",
+      "contractId": "contract-002",
+      "stepNumber": 1,
+      "title": "Infrastructure Requirements",
+      "titleAr": "متطلبات البنية التحتية",
+      "sender": {
+        "id": "party-005",
+        "name": "Ahmed Al-Rashidi",
+        "avatar": "",
+        "company": "AEGIS VAULT"
+      },
+      "date": "2026-01-20",
+      "body": "We need enterprise-grade cloud infrastructure with 99.99% uptime guarantee, multi-region deployment across Middle East and Europe, HIPAA compliance, and dedicated support team. Expected data volume: 500TB growing at 20% annually.",
+      "bodyAr": "نحتاج بنية تحتية سحابية للمؤسسات مع ضمان وقت تشغيل 99.99%، نشر متعدد المناطق عبر الشرق الأوسط وأوروبا، الامتثال لـ HIPAA، وفريق دعم مخصص. حجم البيانات المتوقع: 500 تيرابايت بنمو 20% سنويًا.",
+      "status": "accepted",
+      "relatedDraftId": "draft-002-1",
+      "attachments": []
+    },
+    {
+      "id": "msg-002-2",
+      "contractId": "contract-002",
+      "stepNumber": 2,
+      "title": "Premium Tier Proposal",
+      "titleAr": "مقترح المستوى المتميز",
+      "sender": {
+        "id": "party-006",
+        "name": "Lisa Wang",
+        "avatar": "",
+        "company": "Google Cloud"
+      },
+      "date": "2026-02-05",
+      "body": "Based on your requirements, we recommend our Premium Enterprise tier at $50,000/month. This includes: dedicated account manager, 24/7 priority support, multi-region deployment (me-west1, europe-west1), custom SLA with 99.99% uptime guarantee, and HIPAA BAA.",
+      "bodyAr": "بناءً على متطلباتكم، نوصي بالمستوى المتميز للمؤسسات بسعر 50,000 دولار شهريًا. يشمل ذلك: مدير حساب مخصص، دعم أولوية على مدار الساعة، نشر متعدد المناطق، اتفاقية مستوى خدمة مخصصة مع ضمان وقت تشغيل 99.99%، واتفاقية HIPAA BAA.",
+      "status": "pending",
+      "relatedDraftId": "draft-002-2",
+      "attachments": []
+    }
+  ],
+  "contract-003": [
+    {
+      "id": "msg-003-1",
+      "contractId": "contract-003",
+      "stepNumber": 1,
+      "title": "Security Audit Proposal",
+      "titleAr": "مقترح التدقيق الأمني",
+      "sender": {
+        "id": "party-009",
+        "name": "Fatima Al-Zahra",
+        "avatar": "",
+        "company": "AEGIS VAULT"
+      },
+      "date": "2026-02-10",
+      "body": "We submit our comprehensive security audit proposal in response to the Ministry's RFP. Our approach covers: penetration testing, code review, infrastructure assessment, compliance gap analysis, and employee security training. Estimated duration: 6 months.",
+      "bodyAr": "نقدم مقترحنا الشامل للتدقيق الأمني استجابة لطلب تقديم العروض من الوزارة. يغطي نهجنا: اختبار الاختراق، مراجعة الأكواد، تقييم البنية التحتية، تحليل فجوات الامتثال، وتدريب الموظفين على الأمن. المدة المقدرة: 6 أشهر.",
+      "status": "pending",
+      "relatedDraftId": "draft-003-1",
+      "attachments": []
+    }
+  ],
+  "contract-004": [
+    {
+      "id": "msg-004-1",
+      "contractId": "contract-004",
+      "stepNumber": 1,
+      "title": "Standard NDA",
+      "titleAr": "اتفاقية عدم إفشاء قياسية",
+      "sender": {
+        "id": "party-010",
+        "name": "Ahmed Al-Rashidi",
+        "avatar": "",
+        "company": "AEGIS VAULT"
+      },
+      "date": "2025-05-10",
+      "body": "Please find attached our standard mutual NDA template. Key terms: 2-year duration, covers all shared IP and business information, standard remedies for breach, jurisdiction in Riyadh.",
+      "bodyAr": "يرجى الاطلاع على نموذج اتفاقية عدم الإفشاء المتبادلة القياسية المرفق. الشروط الرئيسية: مدة سنتين، تغطي جميع الملكية الفكرية والمعلومات التجارية المتبادلة، تعويضات قياسية عن الانتهاك، الاختصاص القضائي في الرياض.",
+      "status": "accepted",
+      "relatedDraftId": "draft-004-1",
+      "attachments": []
+    },
+    {
+      "id": "msg-004-2",
+      "contractId": "contract-004",
+      "stepNumber": 2,
+      "title": "Samsung Amendments",
+      "titleAr": "تعديلات سامسونج",
+      "sender": {
+        "id": "party-011",
+        "name": "Ji-Yeon Park",
+        "avatar": "",
+        "company": "Samsung Electronics"
+      },
+      "date": "2025-05-20",
+      "body": "We accept the NDA with one amendment: Clause 4.2 should specify data retention period of 3 years after NDA expiration instead of 5 years. All other terms are acceptable.",
+      "bodyAr": "نقبل اتفاقية عدم الإفشاء مع تعديل واحد: يجب أن ينص البند 4.2 على فترة احتفاظ بالبيانات لمدة 3 سنوات بعد انتهاء الاتفاقية بدلاً من 5 سنوات. جميع الشروط الأخرى مقبولة.",
+      "status": "accepted",
+      "relatedDraftId": "draft-004-2",
+      "attachments": []
+    }
+  ]
+}

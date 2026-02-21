@@ -1,0 +1,140 @@
+{
+  "app": {
+    "name": "إيجس فولت",
+    "tagline": "إدارة العقود الآمنة"
+  },
+  "common": {
+    "next": "التالي",
+    "back": "رجوع",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "retry": "إعادة المحاولة",
+    "done": "تم",
+    "close": "إغلاق",
+    "or": "أو",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "password": "كلمة المرور"
+  },
+  "welcome": {
+    "title": "AEGIS VAULT",
+    "subtitle": "إدارة العقود الآمنة",
+    "signUp": "تسجيل جديد",
+    "signIn": "تسجيل دخول"
+  },
+  "auth": {
+    "signUp": {
+      "title": "إنشاء حساب",
+      "subtitle": "أدخل بياناتك للبدء",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "phonePlaceholder": "أدخل رقم هاتفك",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "next": "التالي"
+    },
+    "verifyIdentity": {
+      "title": "التحقق من الهوية الشخصية",
+      "subtitle": "يرجى تقديم مستندات هويتك",
+      "nationalId": "الهوية الوطنية",
+      "nationalIdDesc": "التقط صورة للهوية الوطنية",
+      "passport": "جواز السفر",
+      "passportDesc": "التقط صورة لجواز السفر",
+      "capturePhoto": "التقاط صورة",
+      "captured": "تم الالتقاط",
+      "next": "التالي"
+    },
+    "verifyFace": {
+      "title": "التحقق بالوجه",
+      "subtitle": "رجاءً وجّه الكاميرا على وجهك بوضوح وأنت بمكان مضيء",
+      "capturePhoto": "التقاط",
+      "verified": "تم التحقق من الوجه بنجاح",
+      "failed": "فشل التحقق من الوجه. يرجى المحاولة مرة أخرى.",
+      "alreadyRegistered": "مسجل مسبقاً",
+      "completeRegistration": "إتمام التسجيل"
+    },
+    "success": {
+      "title": "تم التسجيل بنجاح!",
+      "subtitle": "جاري إعداد حسابك الآمن...",
+      "enterApp": "الدخول إلى التطبيق"
+    },
+    "signIn": {
+      "title": "تسجيل الدخول",
+      "subtitle": "مرحباً بك في إيجس فولت",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "passwordPlaceholder": "أدخل كلمة المرور",
+      "signInButton": "تسجيل الدخول",
+      "biometric": "تسجيل الدخول بالبصمة",
+      "signature": "وقّع بإصبعك",
+      "signatureDesc": "ارسم توقيعك أدناه",
+      "clearSignature": "مسح",
+      "forgotPassword": "نسيت كلمة المرور؟"
+    }
+  },
+  "home": {
+    "title": "عقودي",
+    "search": "البحث في العقود...",
+    "empty": "لا توجد عقود بعد",
+    "emptyDesc": "ستظهر عقودك هنا"
+  },
+  "contract": {
+    "details": "تفاصيل العقد",
+    "type": "النوع",
+    "company": "الشركة",
+    "status": "الحالة",
+    "startDate": "تاريخ البدء",
+    "endDate": "تاريخ الانتهاء",
+    "value": "القيمة",
+    "involvedParties": "الأطراف المعنية",
+    "drafts": "المسودات",
+    "timeline": "الجدول الزمني",
+    "proposals": "المقترحات",
+    "viewChat": "عرض المقترحات",
+    "statusLabels": {
+      "draft": "مسودة",
+      "active": "نشط",
+      "pending": "قيد الانتظار",
+      "signed": "موقّع",
+      "expired": "منتهي"
+    },
+    "draftStatus": {
+      "completed": "مكتمل",
+      "current": "حالي",
+      "pending": "قيد الانتظار"
+    }
+  },
+  "chat": {
+    "title": "المقترحات",
+    "empty": "لا توجد مقترحات بعد",
+    "emptyDesc": "ستظهر المقترحات والنقاشات هنا",
+    "compose": "اكتب مقترحاً...",
+    "send": "إرسال",
+    "status": {
+      "accepted": "مقبول",
+      "rejected": "مرفوض",
+      "pending": "قيد الانتظار",
+      "counter": "مقترح مضاد"
+    },
+    "step": "الخطوة"
+  },
+  "tabs": {
+    "home": "الرئيسية",
+    "settings": "الإعدادات"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "arabic": "العربية",
+    "english": "English",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "logoutConfirm": "هل أنت متأكد من تسجيل الخروج؟",
+    "about": "حول التطبيق",
+    "version": "الإصدار"
+  }
+}
