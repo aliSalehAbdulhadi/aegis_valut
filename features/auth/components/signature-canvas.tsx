@@ -1,13 +1,15 @@
-import React, { useRef, useCallback } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import SignatureCanvas from 'react-native-signature-canvas';
 import { useAppTheme } from '@/hooks/use-app-theme';
+import React, { useCallback, useRef } from 'react';
+import { Text, TouchableOpacity, View } from 'react-native';
+import SignatureCanvas from 'react-native-signature-canvas';
 
 interface SignatureCanvasComponentProps {
   title: string;
   description: string;
   clearLabel: string;
   onSignature: (data: string) => void;
+  onTouchStart?: () => void;
+  onTouchEnd?: () => void;
 }
 
 export function SignatureCanvasComponent({
@@ -15,6 +17,8 @@ export function SignatureCanvasComponent({
   description,
   clearLabel,
   onSignature,
+  onTouchStart,
+  onTouchEnd,
 }: SignatureCanvasComponentProps) {
   const signatureRef = useRef<any>(null);
   const { colors, isDark } = useAppTheme();
@@ -25,26 +29,32 @@ export function SignatureCanvasComponent({
 
   const handleEnd = useCallback(() => {
     signatureRef.current?.readSignature();
-  }, []);
+    onTouchEnd?.();
+  }, [onTouchEnd]);
+
+  const handleBegin = useCallback(() => {
+    onTouchStart?.();
+  }, [onTouchStart]);
 
   const handleOK = useCallback(
     (signature: string) => {
       onSignature(signature);
     },
-    [onSignature]
+    [onSignature],
   );
 
   return (
-    <View className="mt-4">
-      <Text className="mb-1 text-base font-semibold text-gray-900 dark:text-gray-100">
+    <View className='mt-4'>
+      <Text className='mb-1 text-base font-semibold text-gray-900 dark:text-gray-100'>
         {title}
       </Text>
-      <Text className="mb-3 text-sm text-gray-500 dark:text-gray-400">
+      <Text className='mb-3 text-sm text-gray-500 dark:text-gray-400'>
         {description}
       </Text>
-      <View className="h-48 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+      <View className='h-48 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700'>
         <SignatureCanvas
           ref={signatureRef}
+          onBegin={handleBegin}
           onEnd={handleEnd}
           onOK={handleOK}
           webStyle={`
@@ -59,9 +69,11 @@ export function SignatureCanvasComponent({
       </View>
       <TouchableOpacity
         onPress={handleClear}
-        className="mt-2 self-end rounded-lg px-4 py-2"
+        className='mt-2 self-end rounded-lg px-4 py-2'
       >
-        <Text className="text-sm font-medium text-primary-500">{clearLabel}</Text>
+        <Text className='text-sm font-medium text-primary-500'>
+          {clearLabel}
+        </Text>
       </TouchableOpacity>
     </View>
   );

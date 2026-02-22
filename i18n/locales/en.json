@@ -120,7 +120,26 @@
       "pending": "Pending",
       "counter": "Counter Proposal"
     },
-    "step": "Step"
+    "step": "Step",
+    "viewPdf": "View PDF",
+    "signContract": "Sign"
+  },
+  "pdf": {
+    "title": "Document Viewer",
+    "page": "Page",
+    "loadError": "Failed to load the PDF document. Please try again."
+  },
+  "sign": {
+    "title": "Sign Contract",
+    "document": "Contract Document",
+    "signatureTitle": "Your Signature",
+    "signatureDesc": "Draw your signature below to sign this contract",
+    "signatureCaptured": "Signature captured",
+    "clear": "Clear",
+    "redraw": "Redraw Signature",
+    "confirmSign": "Confirm & Sign Contract",
+    "successTitle": "Contract Signed!",
+    "successMessage": "Your signature has been submitted successfully."
   },
   "tabs": {
     "home": "Home",

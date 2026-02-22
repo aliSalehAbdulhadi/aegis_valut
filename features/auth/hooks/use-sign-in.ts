@@ -1,8 +1,8 @@
-import { useState, useCallback } from 'react';
+import { loginWithMock } from '@/features/auth/store/auth-slice';
 import { useAppDispatch } from '@/store/hooks';
-import { loginWithMock, setSignature } from '@/features/auth/store/auth-slice';
-import { useRouter } from 'expo-router';
 import * as LocalAuthentication from 'expo-local-authentication';
+import { useRouter } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { Alert } from 'react-native';
 
 export function useSignIn() {
@@ -24,7 +24,6 @@ export function useSignIn() {
     }
 
     setLoading(true);
-    // Simulate API call
     setTimeout(() => {
       dispatch(loginWithMock());
       setLoading(false);
@@ -36,7 +35,10 @@ export function useSignIn() {
     try {
       const hasHardware = await LocalAuthentication.hasHardwareAsync();
       if (!hasHardware) {
-        Alert.alert('Error', 'Biometric authentication not available on this device');
+        Alert.alert(
+          'Error',
+          'Biometric authentication not available on this device',
+        );
         return;
       }
 
@@ -61,13 +63,6 @@ export function useSignIn() {
     }
   }, [dispatch, router]);
 
-  const handleSignatureCapture = useCallback(
-    (signatureData: string) => {
-      dispatch(setSignature(signatureData));
-    },
-    [dispatch]
-  );
-
   return {
     email,
     setEmail,
@@ -77,6 +72,5 @@ export function useSignIn() {
     errors,
     handleSignIn,
     handleBiometricAuth,
-    handleSignatureCapture,
   };
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  SafeAreaView,
   KeyboardAvoidingView,
-  ScrollView,
   Platform,
-  View,
+  SafeAreaView,
+  ScrollView,
   StatusBar,
+  View,
 } from 'react-native';
 
 interface BaseScreenProps {
@@ -14,6 +14,7 @@ interface BaseScreenProps {
   padded?: boolean;
   className?: string;
   statusBarStyle?: 'light' | 'dark';
+  scrollEnabled?: boolean;
 }
 
 export function BaseScreen({
@@ -22,6 +23,7 @@ export function BaseScreen({
   padded = true,
   className = '',
   statusBarStyle,
+  scrollEnabled = true,
 }: BaseScreenProps) {
   const content = (
     <View className={`flex-1 ${padded ? 'px-4' : ''} ${className}`}>
@@ -30,20 +32,21 @@ export function BaseScreen({
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-white dark:bg-gray-950">
+    <SafeAreaView className='flex-1 bg-white dark:bg-gray-950'>
       <StatusBar
         barStyle={statusBarStyle === 'light' ? 'light-content' : 'dark-content'}
       />
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        className="flex-1"
+        className='flex-1'
       >
         {scroll ? (
           <ScrollView
-            className="flex-1"
-            contentContainerClassName="flex-grow"
-            keyboardShouldPersistTaps="handled"
+            className='flex-1'
+            contentContainerClassName='flex-grow'
+            keyboardShouldPersistTaps='handled'
             showsVerticalScrollIndicator={false}
+            scrollEnabled={scrollEnabled}
           >
             {content}
           </ScrollView>

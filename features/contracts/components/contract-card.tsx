@@ -1,11 +1,11 @@
-import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import { useTranslation } from 'react-i18next';
-import { ChevronRight, Building2 } from 'lucide-react-native';
 import { BaseBadge } from '@/components/base/base-badge';
 import { useAppTheme } from '@/hooks/use-app-theme';
+import type { Contract } from '@/types/global';
 import { formatShortDate } from '@/utils/format-date';
-import type { Contract, ContractStatus } from '@/types/global';
+import { Building2, ChevronLeft, ChevronRight } from 'lucide-react-native';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { I18nManager, Text, TouchableOpacity, View } from 'react-native';
 
 interface ContractCardProps {
   contract: Contract;
@@ -29,7 +29,7 @@ export function ContractCard({ contract, onPress }: ContractCardProps) {
     <TouchableOpacity
       onPress={onPress}
       activeOpacity={0.7}
-      className="mb-3 rounded-2xl bg-white p-4 dark:bg-gray-900"
+      className='mb-3 rounded-2xl bg-white p-4 dark:bg-gray-900'
       style={{
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 1 },
@@ -38,53 +38,77 @@ export function ContractCard({ contract, onPress }: ContractCardProps) {
         elevation: 2,
       }}
     >
-      <View className="flex-row items-center">
+      <View className='flex-row items-center'>
         {/* Company Icon */}
         <View
           className={`h-12 w-12 items-center justify-center rounded-xl ${
             COMPANY_COLORS[contract.companyLogo] ?? 'bg-gray-500'
           }`}
         >
-          <Building2 size={24} color="#fff" />
+          <Building2 size={24} color='#fff' />
         </View>
 
         {/* Info */}
-        <View className="ml-3 flex-1">
+        <View
+          className='ml-3 flex-1'
+          style={{
+            alignItems: 'flex-start',
+          }}
+        >
           <Text
-            className="text-base font-semibold text-gray-900 dark:text-gray-100"
+            className='text-base font-semibold text-gray-900 dark:text-gray-100'
             numberOfLines={1}
           >
             {title}
           </Text>
-          <Text className="mt-0.5 text-sm text-gray-500 dark:text-gray-400">
+          <Text className='mt-0.5 text-sm text-gray-500 dark:text-gray-400'>
             {contract.companyName}
           </Text>
         </View>
 
-        <ChevronRight size={20} color={colors.textSecondary} />
+        {I18nManager.isRTL ? (
+          <ChevronLeft size={20} color={colors.textSecondary} />
+        ) : (
+          <ChevronRight size={20} color={colors.textSecondary} />
+        )}
       </View>
 
       {/* Bottom row: badges + date */}
-      <View className="mt-3 flex-row items-center justify-between">
-        <View className="flex-row items-center gap-2">
+      <View
+        className='mt-3 flex-row items-center justify-between'
+        style={{ flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row' }}
+      >
+        <View
+          className='flex-row items-center gap-2'
+          style={{ flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row' }}
+        >
           <BaseBadge
             variant={contract.status}
             label={t(`contract.statusLabels.${contract.status}`)}
           />
-          <BaseBadge variant="info" label={contract.type} />
+          <BaseBadge variant='info' label={contract.type} />
         </View>
-        <Text className="text-xs text-gray-400">
+        <Text
+          className='text-xs text-gray-400'
+          style={{ textAlign: I18nManager.isRTL ? 'left' : 'right' }}
+        >
           {formatShortDate(contract.startDate)}
         </Text>
       </View>
 
       {/* Draft count */}
-      <View className="mt-2 flex-row items-center">
-        <Text className="text-xs text-gray-400">
+      <View
+        className='mt-2 flex-row items-center'
+        style={{
+          flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row',
+          justifyContent: 'flex-end',
+        }}
+      >
+        <Text className='text-xs text-gray-400'>
           {contract.drafts.length} {t('contract.drafts')}
         </Text>
-        <Text className="mx-2 text-gray-300">•</Text>
-        <Text className="text-xs text-gray-400">
+        <Text className='mx-2 text-gray-300'>•</Text>
+        <Text className='text-xs text-gray-400'>
           {contract.involvedParties.length} {t('contract.involvedParties')}
         </Text>
       </View>

@@ -120,7 +120,26 @@
       "pending": "قيد الانتظار",
       "counter": "مقترح مضاد"
     },
-    "step": "الخطوة"
+    "step": "الخطوة",
+    "viewPdf": "عرض PDF",
+    "signContract": "توقيع"
+  },
+  "pdf": {
+    "title": "عارض المستندات",
+    "page": "صفحة",
+    "loadError": "فشل في تحميل مستند PDF. يرجى المحاولة مرة أخرى."
+  },
+  "sign": {
+    "title": "توقيع العقد",
+    "document": "مستند العقد",
+    "signatureTitle": "توقيعك",
+    "signatureDesc": "ارسم توقيعك أدناه لتوقيع هذا العقد",
+    "signatureCaptured": "تم التقاط التوقيع",
+    "clear": "مسح",
+    "redraw": "إعادة التوقيع",
+    "confirmSign": "تأكيد وتوقيع العقد",
+    "successTitle": "تم توقيع العقد!",
+    "successMessage": "تم تقديم توقيعك بنجاح."
   },
   "tabs": {
     "home": "الرئيسية",

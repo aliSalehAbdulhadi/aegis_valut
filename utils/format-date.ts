@@ -15,14 +15,14 @@ const DATE_OPTIONS_AR: Intl.DateTimeFormatOptions = {
 
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
-  const locale = i18n.language === 'ar' ? 'ar-SA' : 'en-US';
+  const locale = i18n.language === 'ar' ? 'ar-US' : 'en-US';
   const options = i18n.language === 'ar' ? DATE_OPTIONS_AR : DATE_OPTIONS_EN;
   return date.toLocaleDateString(locale, options);
 }
 
 export function formatShortDate(dateString: string): string {
   const date = new Date(dateString);
-  const locale = i18n.language === 'ar' ? 'ar-SA' : 'en-US';
+  const locale = i18n.language === 'ar' ? 'ar-US' : 'en-US';
   return date.toLocaleDateString(locale, {
     year: 'numeric',
     month: 'short',

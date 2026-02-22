@@ -81,6 +81,7 @@ export interface Contract {
   drafts: Draft[];
   value?: string;
   currency?: string;
+  pdfUrl?: string;
 }
 
 // ========================
@@ -106,6 +107,7 @@ export interface ProposalMessage {
   status: ProposalStatus;
   relatedDraftId?: string;
   attachments?: string[];
+  pdfUrl?: string;
 }
 
 // ========================

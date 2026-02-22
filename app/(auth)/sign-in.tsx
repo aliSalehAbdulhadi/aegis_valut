@@ -1,15 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { useTranslation } from 'react-i18next';
-import { Mail, Lock, Fingerprint } from 'lucide-react-native';
-import { BaseScreen } from '@/components/base/base-screen';
-import { BaseInput } from '@/components/base/base-input';
 import { BaseButton } from '@/components/base/base-button';
+import { BaseInput } from '@/components/base/base-input';
+import { BaseScreen } from '@/components/base/base-screen';
 import { BaseText } from '@/components/base/base-text';
-import { Header } from '@/components/layout/header';
-import { SignatureCanvasComponent } from '@/features/auth/components/signature-canvas';
-import { useSignIn } from '@/features/auth/hooks/use-sign-in';
 import { LoadingOverlay } from '@/components/feedback/loading-overlay';
+import { Header } from '@/components/layout/header';
+import { useSignIn } from '@/features/auth/hooks/use-sign-in';
+import { Fingerprint, Lock, Mail } from 'lucide-react-native';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Text, View } from 'react-native';
 
 export default function SignInScreen() {
   const { t } = useTranslation();
@@ -22,15 +21,14 @@ export default function SignInScreen() {
     errors,
     handleSignIn,
     handleBiometricAuth,
-    handleSignatureCapture,
   } = useSignIn();
 
   return (
     <BaseScreen>
       <Header title={t('auth.signIn.title')} showBack />
 
-      <View className="px-2 pt-4">
-        <BaseText variant="subtitle" className="mb-8">
+      <View className='px-2 pt-4'>
+        <BaseText variant='subtitle' className='mb-8'>
           {t('auth.signIn.subtitle')}
         </BaseText>
 
@@ -40,8 +38,8 @@ export default function SignInScreen() {
           value={email}
           onChangeText={setEmail}
           icon={Mail}
-          keyboardType="email-address"
-          autoCapitalize="none"
+          keyboardType='email-address'
+          autoCapitalize='none'
           error={errors.email}
         />
 
@@ -56,44 +54,36 @@ export default function SignInScreen() {
         />
 
         <BaseButton
-          variant="primary"
-          size="lg"
+          variant='primary'
+          size='lg'
           fullWidth
           onPress={handleSignIn}
-          className="mt-2"
+          className='mt-2'
         >
           {t('auth.signIn.signInButton')}
         </BaseButton>
 
         {/* Divider */}
-        <View className="my-6 flex-row items-center">
-          <View className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
-          <Text className="mx-4 text-sm text-gray-400">{t('common.or')}</Text>
-          <View className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
+        <View className='my-6 flex-row items-center'>
+          <View className='h-px flex-1 bg-gray-200 dark:bg-gray-700' />
+          <Text className='mx-4 text-sm text-gray-400'>{t('common.or')}</Text>
+          <View className='h-px flex-1 bg-gray-200 dark:bg-gray-700' />
         </View>
 
         {/* Biometric Auth */}
         <BaseButton
-          variant="outline"
-          size="lg"
+          variant='outline'
+          size='lg'
           fullWidth
           onPress={handleBiometricAuth}
         >
-          <View className="flex-row items-center">
-            <Fingerprint size={24} color="#0A7EA4" />
-            <Text className="ml-3 text-base font-semibold text-primary-500">
+          <View className='flex-row items-center'>
+            <Fingerprint size={24} color='#0A7EA4' />
+            <Text className='ml-3 text-base font-semibold text-primary-500'>
               {t('auth.signIn.biometric')}
             </Text>
           </View>
         </BaseButton>
-
-        {/* Signature Canvas */}
-        <SignatureCanvasComponent
-          title={t('auth.signIn.signature')}
-          description={t('auth.signIn.signatureDesc')}
-          clearLabel={t('auth.signIn.clearSignature')}
-          onSignature={handleSignatureCapture}
-        />
       </View>
 
       {loading && <LoadingOverlay />}

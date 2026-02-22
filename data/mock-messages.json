@@ -36,7 +36,8 @@
       "bodyAr": "شكرًا على المقترح. نتفق مع نطاق التكامل لكن نقترح تقسيم 60/40 للسنة الأولى، والانتقال إلى 50/50 في السنة الثانية. نطلب أيضًا أحكام إضافية لخصوصية البيانات وفقًا لمتطلبات GDPR الأوروبي و CCPA الكاليفورني. مرفق وثيقة الشروط المعدلة.",
       "status": "counter",
       "relatedDraftId": "draft-001-2",
-      "attachments": []
+      "attachments": [],
+      "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
       "id": "msg-001-3",
@@ -74,7 +75,8 @@
       "bodyAr": "وافق قسم الشؤون القانونية في ميتا على الاتفاقية النهائية. يُطلب من جميع الأطراف مراجعة الوثيقة النهائية وتقديم التوقيعات الرقمية بحلول 15 يناير 2026.",
       "status": "accepted",
       "relatedDraftId": "draft-001-4",
-      "attachments": []
+      "attachments": [],
+      "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     }
   ],
   "contract-002": [

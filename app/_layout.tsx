@@ -1,37 +1,50 @@
-import '@/i18n';
 import '@/global.css';
 
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import {
+  DarkTheme,
+  DefaultTheme,
+  ThemeProvider,
+} from '@react-navigation/native';
 import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { Provider } from 'react-redux';
-import { I18nManager } from 'react-native';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-
-import { store } from '@/store';
+import { useEffect, useState } from 'react';
 import { useColorScheme } from 'react-native';
+import { Provider } from 'react-redux';
+
+import { loadPersistedLanguage } from '@/i18n';
+import { store } from '@/store';
+
+// Prevent splash screen from hiding until language is loaded
+SplashScreen.preventAutoHideAsync();
 
 function RootNavigator() {
   const colorScheme = useColorScheme();
-  const { i18n } = useTranslation();
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const isArabic = i18n.language === 'ar';
-    if (I18nManager.isRTL !== isArabic) {
-      I18nManager.allowRTL(isArabic);
-      I18nManager.forceRTL(isArabic);
+    async function prepare() {
+      // Load persisted language and apply RTL
+      await loadPersistedLanguage();
+      setIsReady(true);
+      await SplashScreen.hideAsync();
     }
-  }, [i18n.language]);
+
+    prepare();
+  }, []);
+
+  if (!isReady) {
+    return null;
+  }
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="(auth)" />
-        <Stack.Screen name="(main)" />
+        <Stack.Screen name='index' />
+        <Stack.Screen name='(auth)' />
+        <Stack.Screen name='(main)' />
       </Stack>
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
     </ThemeProvider>
   );
 }

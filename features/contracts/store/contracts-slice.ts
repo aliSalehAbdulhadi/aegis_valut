@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { Contract } from '@/types/global';
 import mockContracts from '@/data/mock-contracts.json';
+import type { Contract } from '@/types/global';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ContractsState {
   contracts: Contract[];
@@ -32,6 +32,12 @@ const contractsSlice = createSlice({
     setLoading(state, action: PayloadAction<boolean>) {
       state.loading = action.payload;
     },
+    signContract(state, action: PayloadAction<string>) {
+      const contract = state.contracts.find((c) => c.id === action.payload);
+      if (contract) {
+        contract.status = 'signed';
+      }
+    },
   },
 });
 
@@ -40,6 +46,7 @@ export const {
   clearActiveContract,
   setSearchQuery,
   setLoading,
+  signContract,
 } = contractsSlice.actions;
 
 export default contractsSlice.reducer;

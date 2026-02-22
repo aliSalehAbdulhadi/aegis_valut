@@ -12,8 +12,10 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "AEGIS VAULT needs camera access for identity verification",
-        "NSFaceIDUsageDescription": "AEGIS VAULT uses Face ID for secure authentication"
-      }
+        "NSFaceIDUsageDescription": "AEGIS VAULT uses Face ID for secure authentication",
+        "CFBundleLocalizations": ["en", "ar"]
+      },
+      "bundleIdentifier": "com.alisaleh2.aegis-vault"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,8 +25,17 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
+      "allowBackup": false,
       "predictiveBackGestureEnabled": false,
-      "permissions": ["CAMERA"]
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.alisaleh2.aegisvault"
     },
     "web": {
       "output": "static",
@@ -66,7 +77,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "supportsRTL": true
+      "eas": {}
     }
   }
 }

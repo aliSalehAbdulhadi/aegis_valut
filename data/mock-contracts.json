@@ -13,6 +13,7 @@
     "descriptionAr": "اتفاقية شراكة استراتيجية بين إيجس فولت وميتا لدمج إدارة المستندات الآمنة عبر فيسبوك بيزنس سويت.",
     "value": "2,500,000",
     "currency": "USD",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "involvedParties": [
       {
         "id": "party-001",
@@ -130,6 +131,7 @@
     "descriptionAr": "اتفاقية مستوى الخدمة للاستضافة على بنية جوجل كلاود التحتية وخدمات تخزين البيانات.",
     "value": "1,200,000",
     "currency": "USD",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "involvedParties": [
       {
         "id": "party-005",
@@ -219,6 +221,7 @@
     "descriptionAr": "عقد التدقيق الأمني وشهادة الامتثال لأنظمة إدارة المستندات الحكومية.",
     "value": "800,000",
     "currency": "USD",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "involvedParties": [
       {
         "id": "party-007",
@@ -301,6 +304,7 @@
     "descriptionAr": "اتفاقية عدم إفشاء تغطي التقنيات المملوكة واستراتيجيات الأعمال المتبادلة خلال استكشاف الشراكة.",
     "value": "N/A",
     "currency": "",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "involvedParties": [
       {
         "id": "party-010",
